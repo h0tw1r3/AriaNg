@@ -78,7 +78,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mayswind/AriaNg.git"
+    "url": "git+https://github.com/free-bots/AriaNg.git"
   },
   "keywords": [
     "aria2",
@@ -89,7 +89,7 @@
   "author": "MaysWind <i@mayswind.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mayswind/AriaNg/issues"
+    "url": "https://github.com/free-bots/AriaNg/issues"
   },
   "homepage": "http://ariang.mayswind.net/"
 }
