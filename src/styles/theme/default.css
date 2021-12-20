@@ -60,6 +60,14 @@
     color: #999999;
 }
 
+.skin-aria-ng .main-header .navbar .combined-icon {
+    position: absolute;
+    overflow: hidden;
+    bottom: 1.5rem;
+    right: 0;
+    font-size: 0.8rem;
+}
+
 @media (max-width: 767px) {
     .skin-aria-ng .main-header .navbar {
         padding-left: 20px;

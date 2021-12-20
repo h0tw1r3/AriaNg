@@ -25,6 +25,8 @@
             'Retry Selected Tasks': 'Retry Selected Tasks',
             'Delete': 'Delete',
             'Select All': 'Select All',
+            'Select All And Start': 'Select All And Start',
+            'Select All And Pause': 'Select All And Pause',
             'Select None': 'Select None',
             'Select Invert': 'Select Invert',
             'Select All Failed Tasks': 'Select All Failed Tasks',
