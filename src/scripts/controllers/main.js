@@ -316,7 +316,8 @@
                 ariaNgLocalizationService.confirm('Confirm Remove', 'Are you sure you want to remove the selected task?', 'warning', removeTasks);
             } else {
                 removeTasks();
-            };
+            }
+            ;
         };
 
         $scope.clearStoppedTasks = function () {
@@ -344,6 +345,16 @@
         $scope.selectAllTasks = function () {
             $rootScope.taskContext.selectAll();
         };
+
+        $scope.selectAllTasksAndStart = function () {
+            $scope.selectAllTasks();
+            $scope.changeTasksState('start');
+        }
+
+        $scope.selectAllTasksAndPause = function () {
+            $scope.selectAllTasks();
+            $scope.changeTasksState('pause');
+        }
 
         $scope.selectAllFailedTasks = function () {
             $rootScope.taskContext.selectAllFailed();
