@@ -1,7 +1,6 @@
 # AriaNg
-[![License](https://img.shields.io/github/license/mayswind/AriaNg.svg?style=flat)](https://github.com/mayswind/AriaNg/blob/master/LICENSE)
-[![Lastest Build](https://img.shields.io/circleci/project/github/mayswind/AriaNg.svg?style=flat)](https://circleci.com/gh/mayswind/AriaNg/tree/master)
-[![Lastest Release](https://img.shields.io/github/release/mayswind/AriaNg.svg?style=flat)](https://github.com/mayswind/AriaNg/releases)
+[![GitHub license](https://img.shields.io/github/license/free-bots/AriaNg?style=for-the-badge)](https://github.com/free-bots/AriaNg/blob/botsFlavor/LICENSE)
+[![Lastest Release](https://img.shields.io/github/release/free-bots/AriaNg.svg?style=for-the-badge)](https://github.com/free-bots/AriaNg/releases)
 
 ## Introduction
 AriaNg is a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.
@@ -26,6 +25,9 @@ AriaNg is a modern web frontend making [aria2](https://github.com/aria2/aria2) e
 8. Multi aria2 RPC host support
 9. Exporting and Importing settings support
 10. Less bandwidth usage, only requesting incremental data
+11. Configuration usage across multiple clients *(DO NOT USE THIS IF YOUR AriaNg DEPLOYMENT IS PUBLIC ACCESSIBLE! EVERYONE COULD USE YOUR SECRETS!)*
+    - Modify example-default-config.json and rename it to config.json. AriaNg fetches the config and overwrites the local configuration in your browser, this allows you to define for example a default list of hosts.
+    - The easiest way is to configure all your settings in the browser and use the export functionality then paste the exported config in config.json
 
 ## Screenshots
 #### Desktop
@@ -37,17 +39,15 @@ AriaNg is a modern web frontend making [aria2](https://github.com/aria2/aria2) e
 AriaNg now provides three versions, standard version, all-in-one version and [AriaNg Native](https://github.com/mayswind/AriaNg-Native). Standard version is suitable for deployment in the web server, and provides on-demand loading. All-In-One version is suitable for local using, and you can download it and just open the only html file in browser. [AriaNg Native](https://github.com/mayswind/AriaNg-Native) is also suitable for local using, and is no need for browser. 
 
 #### Prebuilt release
-Latest Release: [https://github.com/mayswind/AriaNg/releases](https://github.com/mayswind/AriaNg/releases)
-
-Latest Daily Build (Standard Version): [https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip](https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip)
+Latest Release: [https://github.com/free-bots/AriaNg/releases](https://github.com/free-bots/AriaNg/releases)
 
 #### Building from source
-Make sure you have [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/) and [Gulp](https://gulpjs.com/) installed. Then download the source code, and follow these steps.
+Make sure you have [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/) installed. Then download the source code, and follow these steps.
 
 ##### Standard Version
 
     $ npm install
-    $ gulp clean build
+    $ npm run build
 
 ##### All-In-One Version
 
