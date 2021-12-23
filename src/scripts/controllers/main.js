@@ -137,9 +137,7 @@
             return false;
         };
 
-        $scope.changeTasksState = function (state) {
-            var gids = $rootScope.taskContext.getSelectedTaskIds();
-
+        $scope.changeTasksStateForGids = function (gids, state) {
             if (!gids || gids.length < 1) {
                 return;
             }
@@ -179,6 +177,11 @@
                     }
                 }
             }, (gids.length > 1));
+        };
+
+        $scope.changeTasksState = function (state) {
+            var gids = $rootScope.taskContext.getSelectedTaskIds();
+            $scope.changeTasksStateForGids(gids, state);
         };
 
         $scope.retryTask = function (task) {
@@ -346,14 +349,48 @@
             $rootScope.taskContext.selectAll();
         };
 
+        $scope.getTasksOfGids = function (type, callback) {
+            return aria2TaskService.getTaskList(type, true, function (response) {
+
+                if (!response.success) {
+                    return;
+                }
+
+                var taskList = response.data;
+                if (!taskList || taskList.length < 1) {
+                    return;
+                }
+
+                callback(taskList);
+            }, true);
+        }
+
+        $scope.selectAllAndChangeTo = function (state) {
+            if (state === 'start') {
+                $scope.getTasksOfGids('waiting', function (taskList) {
+                    var gids = taskList.filter(task => task.status !== 'waiting').map(task => task.gid);
+                    $scope.changeTasksStateForGids(gids, state);
+                });
+            }
+
+            if (state === 'pause') {
+                $scope.getTasksOfGids('waiting', function (taskList) {
+                    var gids = taskList.filter(task => task.status !== 'paused').map(task => task.gid);
+                    $scope.changeTasksStateForGids(gids, state);
+                    $scope.getTasksOfGids('downloading', function (taskList) {
+                        var gids = taskList.map(task => task.gid);
+                        $scope.changeTasksStateForGids(gids, state);
+                    });
+                });
+            }
+        }
+
         $scope.selectAllTasksAndStart = function () {
-            $scope.selectAllTasks();
-            $scope.changeTasksState('start');
+            $scope.selectAllAndChangeTo('start')
         }
 
         $scope.selectAllTasksAndPause = function () {
-            $scope.selectAllTasks();
-            $scope.changeTasksState('pause');
+            $scope.selectAllAndChangeTo('pause')
         }
 
         $scope.selectAllFailedTasks = function () {
