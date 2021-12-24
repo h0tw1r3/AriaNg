@@ -1,0 +1,596 @@
+/* skin-aria-ng core */
+.theme-dracula.skin-aria-ng {
+    color: #f8f8f2;
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng a {
+    color: #8be9fd;
+}
+
+
+.theme-dracula.skin-aria-ng select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23cccccc%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E') !important;
+}
+
+.theme-dracula.skin-aria-ng .cg-busy-backdrop {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .btn-default {
+    color: #f8f8f2;
+    border-color: #3f3f3f;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .btn-default:hover,
+.theme-dracula.skin-aria-ng .btn-default:active,
+.theme-dracula.skin-aria-ng .btn-default.hover {
+    color: #f8f8f2;
+    background-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .close {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng pre {
+    background-color: #44475a;
+    border-color: #666;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .form-control {
+    background-color: #44475a;
+    border-color: #666;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .form-control:focus {
+    border-color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .form-control[disabled],
+.theme-dracula.skin-aria-ng .form-control[readonly],
+.theme-dracula.skin-aria-ng fieldset[disabled] .form-control {
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .input-group-addon {
+    color: #f8f8f2;
+    border-color: #666;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .input-group.input-group-multiple > .input-group-addon:first-child,
+.theme-dracula.skin-aria-ng .input-group.input-group-multiple > .input-group-addon-container:first-child {
+    border-color: #666;
+}
+
+.theme-dracula.skin-aria-ng .progress {
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+
+.skin-aria-ng .progress-bar-primary {
+    background-color: #50fa7b;
+    color: #f8f8f2;
+}
+
+.skin-aria-ng .progress-bar-warning {
+    background-color: #ffb86c;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs {
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li > a {
+    color: #ddd;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li.active {
+    border-color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li.active > a,
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li.active:hover > a {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li > a:hover,
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li > a:active,
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li.active > a {
+    color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .nav-tabs > li.divider {
+    border-color: #666;
+}
+
+.theme-dracula.skin-aria-ng .nav-tabs-custom > .tab-content {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .popover {
+    background-color: #282a36;
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+.theme-dracula.skin-aria-ng .popover.top .arrow:after {
+    border-top-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .popover.right .arrow:after {
+    border-right-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .popover.bottom .arrow:after {
+    border-bottom-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .popover.left .arrow:after {
+    border-left-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .modal-header {
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .modal-content {
+    background-color: #282a36;
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+.theme-dracula.skin-aria-ng .modal-footer {
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .dropdown-menu {
+    background-color: #282a36;
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .dropdown-menu > li > a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .dropdown-menu > li > a:hover {
+    color: #f8f8f2;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .dropdown-menu > li.dropdown-submenu:hover {
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .dropdown-menu > .divider {
+    background-color: #666;
+}
+
+.theme-dracula.skin-aria-ng .sweet-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.theme-dracula.skin-aria-ng .sweet-alert {
+    background-color: #222;
+}
+
+.theme-dracula.skin-aria-ng .sweet-alert h2,
+.theme-dracula.skin-aria-ng .sweet-alert p {
+    color: #ddd;
+}
+
+.theme-dracula.skin-aria-ng .sweet-alert .sa-icon.sa-success::before,
+.theme-dracula.skin-aria-ng .sweet-alert .sa-icon.sa-success::after,
+.theme-dracula.skin-aria-ng .sweet-alert .sa-icon.sa-success .sa-fix {
+    background-color: #222;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar {
+    background-color: #44475a;
+    border: none;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li > a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li > a:hover,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li > a:active,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li > a:focus,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a:hover,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a:focus,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > .active > a {
+    color: #8be9fd;
+    background-color: transparent;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li > a:active,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a:hover,
+.theme-dracula.skin-aria-ng .main-header .navbar .nav .open > a:focus {
+    background-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li.disabled > a {
+    color: #8f8f8f !important;
+}
+
+.theme-dracula.skin-aria-ng .main-header .navbar .nav > li.divider {
+    border-color: #666;
+}
+
+.theme-dracula.skin-aria-ng .main-header .logo {
+    background-color: #44475a;
+    border-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .main-header .logo .dropdown-menu > li.active > a {
+    color: #f8f8f2;
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .main-header .logo .dropdown-menu > li.active:hover > a {
+    color: #f8f8f2;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .wrapper,
+.theme-dracula.skin-aria-ng .main-sidebar,
+.theme-dracula.skin-aria-ng .left-side {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.header {
+    color: #ccc;
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li:hover > a {
+    color: #f8f8f2;
+    background-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.active > a {
+    color: #8be9fd;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview:hover > a {
+    color: #f8f8f2;
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview.active > a,
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview.active:hover > a {
+    color: #8be9fd;
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview > a:hover {
+    color: #f8f8f2;
+    background-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview > ul.treeview-menu {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview > ul.treeview-menu > li > a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview > ul.treeview-menu > li > a:hover {
+    color: #f8f8f2;
+    background-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .sidebar-menu > li.treeview > ul.treeview-menu > li.active > a {
+    color: #8be9fd;
+    background-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .sidebar a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .content-wrapper, .theme-dracula.right-side {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .main-footer {
+    background-color: #282a36;
+    border-color: #383838;
+}
+
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li > a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li > a:hover,
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li > a:active,
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li > a:focus,
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li.open > a {
+    color: #8be9fd;
+    background: none;
+}
+
+.theme-dracula.skin-aria-ng .main-footer > .navbar > .navbar-toolbar > .nav > li.divider {
+    border-color: #666;
+}
+
+.theme-dracula.skin-aria-ng .global-status {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng input::-webkit-input-placeholder,
+.theme-dracula.skin-aria-ng input:-moz-placeholder,
+.theme-dracula.skin-aria-ng input::-moz-placeholder,
+.theme-dracula.skin-aria-ng input:-ms-input-placeholder {
+    color: #aaa;
+}
+
+.theme-dracula.skin-aria-ng select.placeholder {
+    color: #aaa;
+}
+
+/* angular-input-dropdown */
+.theme-dracula.skin-aria-ng .input-dropdown ul > li {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .input-dropdown ul > li.active {
+    background-color: #6272a4;
+}
+
+/* cg-busy */
+.theme-dracula.skin-aria-ng .cg-busy-default-sign {
+    color: #f8f8f2;
+    border-color: #666;
+    background-color: #bd93f9;
+    text-shadow: 0 1px 1px #000;
+}
+
+.theme-dracula.skin-aria-ng .cg-busy-default-text {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .cg-busy-default-spinner div {
+    background-color: #f8f8f2;
+}
+
+/* scrollbar */
+.theme-dracula.skin-aria-ng ::-webkit-scrollbar-thumb {
+    background-color: #6272a4;
+}
+
+/* piece-bar / piece-map */
+.theme-dracula.skin-aria-ng .piece-map .piece,
+.theme-dracula.skin-aria-ng .piece-legend > .piece {
+    background-color: #44475a;
+    border-color: #3c3d3e;
+}
+
+.theme-dracula.skin-aria-ng .piece-map .piece.piece-completed,
+.theme-dracula.skin-aria-ng .piece-legend > .piece.piece-completed {
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+}
+
+/* task-table */
+.theme-dracula.skin-aria-ng .task-table {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .task-table .task-table-title a {
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .task-table > .task-table-body > div.row {
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .task-table > .task-table-body > div.row:nth-of-type(odd) {
+    background-color: #35384a;
+}
+
+.theme-dracula.skin-aria-ng .task-table > .task-table-body > div.row:hover {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .task-table .progress span.progress-lower {
+    color: #f8f8f2;
+}
+
+/* settings-table */
+.theme-dracula.skin-aria-ng .settings-table {
+    background-color: #282a36;
+}
+
+.theme-dracula.skin-aria-ng .settings-table > div.row {
+    border-color: #6272a4;
+}
+
+.theme-dracula.skin-aria-ng .settings-table.striped > div.row:nth-of-type(odd) {
+    background-color: #35384a;
+}
+
+.theme-dracula.skin-aria-ng .settings-table.hoverable > div.row:hover {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .settings-table.hoverable > div.row:nth-of-type(odd).no-hover:hover {
+    background-color: #35384a;
+}
+
+/* new-task-table */
+.theme-dracula.skin-aria-ng .new-task-table {
+    background-color: #282a36;
+}
+
+/* awesome-bootstrap-checkbox extend */
+.theme-dracula.skin-aria-ng .checkbox-primary input[type="checkbox"]:checked + label::before,
+.theme-dracula.skin-aria-ng .checkbox-primary input[type="radio"]:checked + label::before,
+.theme-dracula.skin-aria-ng .checkbox-primary input[type="checkbox"]:indeterminate + label::before,
+.theme-dracula.skin-aria-ng .checkbox-primary input[type="radio"]:indeterminate + label::before {
+    background-color: #bd93f9;
+    border-color: #bd93f9;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.top .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.top-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.top-right .tooltip-arrow {
+    border-top-color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.top .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.top-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.top-right .tooltip-arrow {
+    border-top-color: #ffb86c;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.top .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.top-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.top-right .tooltip-arrow {
+    border-top-color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.left .tooltip-arrow {
+    border-left-color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.left .tooltip-arrow {
+    border-left-color: #ffb86c;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.left .tooltip-arrow {
+    border-left-color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.right .tooltip-arrow {
+    border-right-color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.right .tooltip-arrow {
+    border-right-color: #ffb86c;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.right .tooltip-arrow {
+    border-right-color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.bottom .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.bottom-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success.bottom-right .tooltip-arrow {
+    border-bottom-color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.bottom .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.bottom-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning.bottom-right .tooltip-arrow {
+    border-bottom-color: #ffb86c;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.bottom .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.bottom-left .tooltip-arrow,
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error.bottom-right .tooltip-arrow {
+    border-bottom-color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-success .tooltip-inner {
+    background-color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-warning .tooltip-inner {
+    background-color: #ffb86c;
+}
+
+.theme-dracula.skin-aria-ng .tooltip.tooltip-error .tooltip-inner {
+    background-color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .input-group .form-group.has-success + .input-group-addon {
+    border-color: #50fa7b;
+    background-color: #50fa7b;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .input-group .form-group.has-warning + .input-group-addon {
+    border-color: #ffb86c;
+    background-color: #ffb86c;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .input-group .form-group.has-error + .input-group-addon {
+    border-color: #ff5555;
+    background-color: #ff5555;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .label-success {
+    background-color: #50fa7b !important;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .label-primary {
+    background-color: #8be9fd !important;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .label-danger {
+    background-color: #ff5555 !important;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .btn-danger {
+    background-color: #ff5555 !important;
+    border-color: #ff5555 !important;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .btn-primary {
+    background-color: #6272a4 !important;
+    border-color: #6272a4 !important;
+    color: #f8f8f2;
+}
+
+.theme-dracula.skin-aria-ng .chart-pop-wrapper {
+    background-color: #44475a;
+}
+
+.theme-dracula.skin-aria-ng .icon-primary {
+    color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .icon-download {
+    color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .icon-upload {
+    color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .icon-seeder {
+    margin-left: 4px;
+    color: #50fa7b;
+}
+
+.theme-dracula.skin-aria-ng .icon-error {
+    margin-left: 4px;
+    color: #ff5555;
+}
+
+.theme-dracula.skin-aria-ng .icon-expand {
+    color: #8be9fd;
+}
+
+.theme-dracula.skin-aria-ng .task-table .task-right-arrow i {
+    color: #f8f8f2;
+}

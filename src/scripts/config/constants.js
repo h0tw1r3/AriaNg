@@ -25,7 +25,7 @@
         defaultConfigStorageKey: 'fetchedDefaultConfig'
     }).constant('ariaNgDefaultOptions', {
         language: 'en',
-        theme: 'light',
+        theme: 'dracula',
         title: '${downspeed}, ${upspeed} - ${title}',
         titleRefreshInterval: 5000,
         browserNotification: false,

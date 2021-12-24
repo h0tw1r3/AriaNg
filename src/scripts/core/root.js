@@ -26,12 +26,44 @@
 
         var setLightTheme = function () {
             $rootScope.currentTheme = 'light';
-            angular.element('body').removeClass('theme-dark');
+            var classes = ['theme-dark', 'theme-dracula'];
+            classes.forEach(cssClass => {
+                angular.element('body').removeClass(cssClass);
+            });
         };
 
         var setDarkTheme = function () {
             $rootScope.currentTheme = 'dark';
+            var classes = ['theme-dracula'];
+            classes.forEach(cssClass => {
+                angular.element('body').removeClass(cssClass);
+            });
             angular.element('body').addClass('theme-dark');
+        };
+
+        var setDraculaTheme = function () {
+            $rootScope.currentTheme = 'dracula';
+            var classes = ['theme-dark'];
+            classes.forEach(cssClass => {
+                angular.element('body').removeClass(cssClass);
+            });
+            angular.element('body').addClass('theme-dracula');
+        }
+
+        var setTheme = function (theme) {
+            switch (theme) {
+                case 'system':
+                    setThemeBySystemSettings();
+                    break;
+                case 'dark':
+                    setDarkTheme();
+                    break;
+                case 'dracula':
+                    setDraculaTheme();
+                    break;
+                default:
+                    setLightTheme();
+            }
         };
 
         var setThemeBySystemSettings = function () {
@@ -52,13 +84,7 @@
         };
 
         var initTheme = function () {
-            if (ariaNgSettingService.getTheme() === 'system') {
-                setThemeBySystemSettings();
-            } else if (ariaNgSettingService.getTheme() === 'dark') {
-                setDarkTheme();
-            } else {
-                setLightTheme();
-            }
+            setTheme(ariaNgSettingService.getTheme());
         };
 
         var initCheck = function () {
@@ -381,15 +407,7 @@
             autoRefreshAfterPageLoad = true;
         };
 
-        $rootScope.setTheme = function (theme) {
-            if (theme === 'system') {
-                setThemeBySystemSettings();
-            } else if (theme === 'dark') {
-                setDarkTheme();
-            } else {
-                setLightTheme();
-            }
-        };
+        $rootScope.setTheme = setTheme;
 
         ariaNgSettingService.onApplicationCacheUpdated(function () {
             ariaNgLocalizationService.notifyInPage('', 'Application cache has been updated, please reload the page for the changes to take effect.', {
