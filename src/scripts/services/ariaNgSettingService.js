@@ -269,6 +269,10 @@
                 }
             }
 
+            if (angular.isArray(options.speedLimits)) {
+                finalOptions.speedLimits = options.speedLimits;
+            }
+
             setOptions(finalOptions);
         };
 
@@ -731,6 +735,9 @@
                 }
 
                 onFirstVisitCallbacks.push(callback);
+            },
+            getSpeedLimitConfig: function () {
+                return getOption('speedLimits')
             }
         };
     }]);

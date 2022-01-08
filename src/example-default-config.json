@@ -25,5 +25,11 @@
     "afterRetryingTask": "task-list-downloading",
     "displayOrder": "default:asc",
     "fileListDisplayOrder": "default:asc",
-    "peerListDisplayOrder": "default:asc"
+    "peerListDisplayOrder": "default:asc",
+    "speedLimits": [
+        {
+            "downloadLimit": 0,
+            "uploadLimit": 0
+        }
+    ]
 }
