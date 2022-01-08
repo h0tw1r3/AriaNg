@@ -45,6 +45,23 @@
             return null;
         };
 
+        var setGlobalOption = function (key, value) {
+            return new Promise((resolve, reject) => {
+                aria2SettingService.setGlobalOption(key, value, function (response) {
+                    if (response.success && response.data === 'OK') {
+                        resolve();
+                    } else {
+                        reject(response.data.message);
+                    }
+                }, true);
+            })
+        }
+
+        var setSpeedLimit = async function (config) {
+            await setGlobalOption('max-overall-download-limit', `${config.downloadLimit}`);
+            await setGlobalOption('max-overall-upload-limit', `${config.uploadLimit}`);
+        }
+
         if (ariaNgSettingService.getBrowserNotification()) {
             ariaNgNotificationService.requestBrowserPermission();
         }
@@ -496,6 +513,13 @@
                 $interval.cancel(globalStatRefreshPromise);
             }
         });
+
+        $scope.speedLimitConfig = ariaNgSettingService.getSpeedLimitConfig();
+
+        $scope.applyQuickSpeedSettings = function (config) {
+            setSpeedLimit(config)
+                .catch(reason => console.error(reason));
+        }
 
         refreshGlobalStat(true, function () {
             refreshPageTitle();

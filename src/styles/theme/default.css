@@ -536,3 +536,21 @@
 .skin-aria-ng .new-task-table {
     background-color: #fff;
 }
+
+.skin-aria-ng .speed-config-list {
+    display: flex !important;
+}
+
+.skin-aria-ng .speed-config-bar {
+    min-width: 50px;
+    font-size: 0.9rem;
+}
+
+.skin-aria-ng .speed-config {
+    display: flex;
+    align-items: baseline;
+}
+
+.skin-aria-ng .speed-config p {
+    margin: 0;
+}

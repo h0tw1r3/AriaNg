@@ -293,6 +293,19 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="divider"></li>
+                    <li class="speed-config-list">
+                        <a class="speed-config-bar" ng-repeat="config in speedLimitConfig" ng-click="applyQuickSpeedSettings(config)">
+                            <div class="speed-config">
+                                <i class="icon-download fa fa-arrow-down"></i>
+                                <p>{{(config.downloadLimit | readableVolume) + '/s'}}</p>
+                            </div>
+                            <div class="speed-config">
+                                <i class="icon-upload fa fa-arrow-up"></i>
+                                <p>{{(config.uploadLimit | readableVolume) + '/s'}}</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
