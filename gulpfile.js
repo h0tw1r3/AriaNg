@@ -6,6 +6,9 @@ const fs = require('fs');
 const git = require('git-rev-sync');
 const tryFn = require('nice-try');
 const saveLicense = require('uglify-save-license');
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const minify = composer(uglifyes, console);
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -60,9 +63,9 @@ gulp.task('prepare-html', gulp.series('prepare-styles', 'prepare-scripts', 'prep
 ]).pipe($.useref({searchPath: ['.tmp', 'src', '.']}))
     .pipe($.if('js/*.js', $.replace(/\/\/# sourceMappingURL=.*/g, '')))
     .pipe($.if('css/*.css', $.replace(/\/\*# sourceMappingURL=.* \*\/$/g, '')))
-    .pipe($.if(['js/moment-with-locales-*.min.js', 'js/plugins.min.js', 'js/aria-ng.min.js'], $.uglify({output: {comments: saveLicense}})))
+    .pipe($.if(['js/moment-with-locales-*.min.js', 'js/plugins.min.js', 'js/aria-ng.min.js'], minify({output: {comments: saveLicense}})))
     .pipe($.if(['css/plugins.min.css', 'css/aria-ng.min.css'], $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.replace(/url\((\.\.\/fonts\/[a-zA-Z0-9\-]+\.woff2)(\?[a-zA-Z0-9\-_=.]+)?\)/g, (match, fileName) => {
+    .pipe($.replace(/url\((\.\.\/fonts\/[a-zA-Z0-9\-]+\.woff2)(\?[a-zA-Z0-9\-_=.]+)?\)/g, (_match, fileName) => {
         return 'url(' + fileName + ')'; // remove version of woff2 file (woff2 file should be cached via application cache)
     }))
     .pipe($.if(['js/plugins.min.js', 'js/aria-ng.min.js', 'css/plugins.min.css', 'css/aria-ng.min.css'], $.rev()))
@@ -86,11 +89,11 @@ gulp.task('prepare-assets-bundle', () => gulp.src([
 ]).pipe(gulp.dest('.tmp')));
 
 gulp.task('process-assets-bundle', gulp.series('prepare-fonts', 'prepare-langs', 'prepare-html', 'prepare-assets-bundle', () => gulp.src('.tmp/index.html')
-    .pipe($.replace(/<link rel="stylesheet" href="(css\/[a-zA-Z0-9\-_.]+\.css)">/g, (match, fileName) => {
+    .pipe($.replace(/<link rel="stylesheet" href="(css\/[a-zA-Z0-9\-_.]+\.css)">/g, (_match, fileName) => {
         const content = fs.readFileSync('.tmp/' + fileName, 'utf8');
         return '<style type="text/css">' + content + '</style>';
     }))
-    .pipe($.replace(/<script src="(js\/[a-zA-Z0-9\-_.]+\.js)"><\/script>/g, (match, fileName) => {
+    .pipe($.replace(/<script src="(js\/[a-zA-Z0-9\-_.]+\.js)"><\/script>/g, (_match, fileName) => {
         const content = fs.readFileSync('.tmp/' + fileName, 'utf8');
         return '<script type="application/javascript">' + content + '</script>';
     }))

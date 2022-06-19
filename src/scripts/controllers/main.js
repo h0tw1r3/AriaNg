@@ -337,7 +337,6 @@
             } else {
                 removeTasks();
             }
-            ;
         };
 
         $scope.clearStoppedTasks = function () {

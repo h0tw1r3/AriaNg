@@ -60,6 +60,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
     "nice-try": "^3.0.0",
+    "uglify-es": "^3.3.9",
     "uglify-save-license": "^0.4.1"
   },
   "name": "ariang",
